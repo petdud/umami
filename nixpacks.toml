@@ -1,0 +1,10 @@
+# nixpacks.toml
+
+[phases.setup]
+nixPkgs = ['openssl1.1-compat']
+
+[phases.build]
+cmds = ['yarn build']
+
+[start]
+cmd = 'yarn start'
